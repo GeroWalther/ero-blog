@@ -40,3 +40,13 @@
     font-size: var(--size-4);
   }
 }
+
+@media (max-width: 425px) {
+  .header ul {
+    gap: 0rem;
+  }
+
+  .header a {
+    font-size: var(--size-2-5);
+  }
+}
