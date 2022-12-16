@@ -32,5 +32,3 @@ isFeatured: false
 
 翌日
 ピアノのレッスンにしてよかったな。次回はギターにも挑戦しようか。 😂
-
-![picture of art](alan.png)
