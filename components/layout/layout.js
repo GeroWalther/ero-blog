@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import Nav from "./nav";
-import Modal from "../UI/ErrorModal";
+import Modal from "../ui/ErrorModal";
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(true);
