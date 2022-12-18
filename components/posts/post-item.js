@@ -6,7 +6,7 @@ import classes from "./post-item.module.css";
 function PostItem({ post }) {
   const { title, image, excerpt, date, slug } = post;
 
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const formattedDate = new Date(date).toLocaleDateString("ja-JP", {
     day: "numeric",
     month: "long",
     year: "numeric",
