@@ -17,6 +17,9 @@ export default function Footer() {
           <li>
             <Link href="/privacy-policy">プライバシーポリシー</Link>
           </li>
+          <li>
+            <Link href="/disclaimer">免責事項/利用規約</Link>
+          </li>
         </ul>
       </nav>
     </footer>
