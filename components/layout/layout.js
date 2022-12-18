@@ -1,6 +1,9 @@
-import { Fragment, useState, useEffect } from "react";
+import { useState } from "react";
 import Nav from "./nav";
 import Modal from "../ui/ErrorModal";
+import Footer from "./footer";
+
+import classes from "./layout.module.css";
 
 function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -11,12 +14,13 @@ function Layout({ children }) {
   }
 
   return (
-    <Fragment>
+    <div className={classes.container}>
       <Nav />
       <main>{children}</main>
 
       {isOpen && <Modal onClose={onCloseHandler} />}
-    </Fragment>
+      <Footer />
+    </div>
   );
 }
 

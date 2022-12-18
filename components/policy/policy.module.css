@@ -1,0 +1,32 @@
+.policy {
+  margin-top: var(--size-3);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.policy h1 {
+  font-size: var(--size-5);
+  text-align: center;
+}
+.policy .d {
+  margin-top: -10px;
+  padding: 20px 20px;
+}
+
+.textcon {
+  margin-bottom: var(--size-3);
+  padding: 30px 30px;
+  background-color: var(--color-grey-100);
+  justify-content: center;
+}
+
+.textcon li {
+  margin-top: 10px;
+}
+
+.textcon h2 {
+  font-size: var(--size-4);
+}
