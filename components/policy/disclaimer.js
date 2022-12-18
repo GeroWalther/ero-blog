@@ -4,9 +4,11 @@ import Card from "../ui/Card";
 export default function disclaimer() {
   return (
     <div className={classes.disco}>
-      <h1>艶っぽいブログの利用規約と免責事項</h1>
+      <h1>利用規約と免責事項</h1>
       <div className={classes.d}>
-        皆様、艶っぽいブログの内容を楽しく読みながら、こちらの利用規約と免責事項をご了承ください
+        皆様、艶っぽいブログの内容を
+        <br />
+        楽しく読みながら、こちらの利用規約と免責事項をご了承ください
       </div>
       <Card className={classes.textcon}>
         <h2>利用規約</h2>
