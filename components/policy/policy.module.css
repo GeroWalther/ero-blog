@@ -31,3 +31,8 @@
 .textcon h2 {
   font-size: var(--size-4);
 }
+@media (max-width: 425px) {
+  .policy .d {
+    font-size: var(--size-2-7);
+  }
+} ;

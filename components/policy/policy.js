@@ -7,7 +7,8 @@ export default function Policy() {
     <div className={classes.policy}>
       <h1>プライバシーポリシー</h1>
       <div className={classes.d}>
-        皆様の個人情報の重要性を認識し、その適正な収集、利用、保護をはかるとともに、安全管理を行うため、プライバシーポリシーを定め、次のとおり運用します。
+        皆様の個人情報の重要性を認識し、その適正な収集、利用、保護をはかるとともに、安全管理を行うため、プライバシーポリシーを定め、
+        次のとおり運用します。
       </div>
       <Card className={classes.textcon}>
         <h2>1 - 個人情報の定義</h2>
