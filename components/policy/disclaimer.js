@@ -19,7 +19,8 @@ export default function disclaimer() {
           <li>コピーして自分のものとして他の場所で見せるのを禁止します。</li>
         </ul>
         <p>
-          <b>未成年に艶っぽいブログの内容を見せるのが禁止します。</b>
+          未成年に艶っぽいブログの内容を見せるのが禁止します。
+          <b> 18歳以下の閲覧を禁止します。</b>
         </p>
       </Card>
       <Card className={classes.textcon}>
