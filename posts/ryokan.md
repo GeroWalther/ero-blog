@@ -113,4 +113,3 @@ isFeatured: true
 &nbsp;
 
 [後編に続く...](/posts/ryokan2)
-**(後編に続く... クリスマスまでに投稿します。)**
