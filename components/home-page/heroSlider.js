@@ -8,10 +8,10 @@ export default function HeroSlider() {
   const slides = [
     {
       url: "/images/site/flower-red.png",
-      title: "desert 3",
-      alt: "desert picture",
-      artist: "des art3",
-      description: "desertoss lorem d lorem d lorem d lorem d lorem d",
+      title: "red flower",
+      alt: "red flower picture artwork",
+      artist: "",
+      description: "",
     },
     {
       url: "/images/site/flower-twocranesgallery.png",
