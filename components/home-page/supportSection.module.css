@@ -1,0 +1,17 @@
+.bg {
+  background-color: blanchedalmond;
+
+  padding: 3rem;
+  background-size: 500%;
+  background-image: var(--gradient);
+  animation: bg-animation 60s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}

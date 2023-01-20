@@ -44,6 +44,7 @@ body {
   --size-3: 0.75rem;
   --size-4: 1rem;
   --size-5: 1.25rem;
+  --size-5-5: 1.3rem;
   --size-6: 1.5rem;
   --size-8: 2rem;
 
@@ -53,13 +54,26 @@ body {
 
   margin: 0;
   background-color: var(--color-grey-500);
+  background-image: url("/images/site/notsodarkback.png");
+
   color: #252525;
   font-family: "Roboto", sans-serif;
+
+  --gradient: linear-gradient(
+    40deg,
+    rgb(255, 29, 82),
+    rgb(255, 133, 133),
+    rgb(255, 188, 130),
+    rgb(255, 144, 196),
+    rgb(255, 202, 202)
+  );
 }
 
 h1,
 h2,
-h3 {
+h3,
+a,
+p {
   font-family: "Oswald", "Roboto", sans-serif;
 }
 
@@ -70,4 +84,9 @@ a {
 button {
   font: inherit;
   cursor: pointer;
+}
+img,
+image {
+  max-width: 100%;
+  display: block;
 }

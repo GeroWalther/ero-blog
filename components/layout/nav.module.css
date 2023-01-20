@@ -43,10 +43,10 @@
 }
 
 @media (max-width: 425px) {
-  /* if 3 links are displayed
-   .header {
+  /* if 3 links are displayed  */
+  .header {
     padding: 0 3%;
-  } */
+  }
 
   .header ul {
     gap: 0rem;
@@ -57,5 +57,10 @@
 
   .header a {
     font-size: var(--size-3);
+  }
+}
+@media (max-width: 365px) {
+  .header {
+    padding: 0 1%;
   }
 }

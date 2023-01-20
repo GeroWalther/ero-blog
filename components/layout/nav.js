@@ -18,9 +18,9 @@ function Nav() {
           <li>
             <Link href="/contact">問い合わせ</Link>
           </li>
-          {/* <li>
-            <Link href="/about">About</Link>
-          </li> */}
+          <li>
+            <Link href="/about">僕について</Link>
+          </li>
         </ul>
       </nav>
     </header>

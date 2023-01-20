@@ -1,7 +1,7 @@
 ---
 title: "旅館で卓球勝負 (後編)"
 date: "2022-12-24"
-image: sakura.png
+image: flower-red.png
 excerpt: "二人がだんだん熱くなってきて、汗をかき始めた。
 彼女が積極的に俺のシャツを脱がしたや否や腹筋も胸筋も触り始めてくれた途端に、"
 isFeatured: false

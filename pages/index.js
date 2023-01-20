@@ -1,9 +1,10 @@
 import { Fragment } from "react";
 import Head from "next/head";
 
-import Hero from "../components/home-page/hero";
+import HeroSlider from "../components/home-page/heroSlider";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import { getFeaturedPosts } from "../lib/posts-util";
+import SupportSection from "../components/home-page/supportSection";
 
 function HomePage(props) {
   return (
@@ -15,8 +16,10 @@ function HomePage(props) {
           content="艶っぽいブログ。僕なりに面白く書いていた官能小説を皆に楽しく読書させていだけたら、幸いです。小説閲覧完全無料！"
         />
       </Head>
-      <Hero />
+      <HeroSlider />
       <FeaturedPosts posts={props.posts} />
+
+      <SupportSection />
     </Fragment>
   );
 }

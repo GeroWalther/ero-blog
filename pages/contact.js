@@ -1,8 +1,10 @@
 import { Fragment } from "react";
 import Head from "next/head";
 import ContactForm from "../components/contact/contact-form";
+import FeaturedPosts from "../components/home-page/featured-posts";
+import { getFeaturedPosts } from "../lib/posts-util";
 
-function Contact() {
+function Contact(props) {
   return (
     <Fragment>
       <Head>
@@ -13,8 +15,19 @@ function Contact() {
         />
       </Head>
       <ContactForm />
+      <FeaturedPosts posts={props.posts} />
     </Fragment>
   );
+}
+
+export function getStaticProps() {
+  const featuredPosts = getFeaturedPosts();
+
+  return {
+    props: {
+      posts: featuredPosts,
+    },
+  };
 }
 
 export default Contact;

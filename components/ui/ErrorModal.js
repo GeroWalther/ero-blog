@@ -14,8 +14,10 @@ const Modal = ({ onClose }) => {
           <h2>18歳以下の閲覧を禁止します</h2>
         </header>
         {/* <div className={classes.content}>
-      <p></p>
-      </div> */}
+          <p>
+            以下のボタンを押すとこのブログの利用規約と免責事項とプライバシーポリシーに賛成であるということになります。
+          </p>
+        </div> */}
 
         <footer className={classes.actions}>
           <Button onClick={onClose}>了解</Button>
