@@ -124,7 +124,7 @@ export default function HeroSlider() {
           <div className={classes.letters}>
             <h1>艶っぽい小説が好きなブロガーです。</h1>
             <p>
-              僕なりに面白く書いていた官能小説を皆に楽しく読書させていだけたら、幸いです。
+              僕なりに面白く書いていた官能小説を皆に楽しく読書させていただけたら、幸いです。
             </p>
           </div>
           <Link className={classes.explore} href="/posts">
