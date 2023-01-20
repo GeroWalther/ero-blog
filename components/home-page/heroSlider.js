@@ -117,6 +117,7 @@ export default function HeroSlider() {
           className={classes.image}
           src={slides[currentIndex].url}
           alt={slides[currentIndex].alt}
+          priority
           width={800}
           height={400}
         />
