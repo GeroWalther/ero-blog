@@ -4,86 +4,86 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-export default function HeroSlider() {
-  const slides = [
-    {
-      url: "/images/site/flower-red.png",
-      title: "red flower",
-      alt: "red flower picture artwork",
-      artist: "",
-      description: "",
-    },
-    {
-      url: "/images/site/flower-twocranesgallery.png",
-      title: "浮世絵のアート",
-      alt: "浮世絵のアート",
-      artist: "twocranesgallery",
-      description:
-        "浮世絵は江戸時代から一般人向けで、皆は安く買えてアートを集めることができるようになりました。こうしてtwocranesgalleryは「Standard Edition」で昔と同じようにアートを皆に提供するつもりです。リンクをご覧ください。",
-      link: "https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=",
-    },
-    {
-      url: "/images/site/girlontop.png",
-      title: "milkformycoconut",
-      alt: "NewApproachStudy - study",
-      artist: "milkformycoconut",
-      description: " NewApproachStudy - study",
-      link: "https://www.instagram.com/p/B-hEJa6pO1B/",
-    },
-    {
-      url: "/images/site/japgirl.png",
-      title: "saitamiya",
-      alt: "小説挿絵",
-      artist: "saitamiya",
-      description:
-        "「特選小説」２０２３年３月号『たまのこし』（著・花房観音）小説挿絵",
-      link: "https://www.instagram.com/p/CnonjCQvZhb/",
-    },
-    {
-      url: "/images/site/squirt.png",
-      title: "milkformycoconut",
-      alt: "CherryBlossomStudy - sketch / study,",
-      artist: "milkformycoconut",
-      description: "CherryBlossomStudy - sketch / study",
-      link: "https://www.instagram.com/p/B9t0v1yIFpN/",
-    },
-    {
-      url: "/images/site/tangle.png",
-      title: "No.21 ''Tangled up''",
-      alt: "No.21 ''Tangled up''",
-      artist: "tsubakianna",
-      description:
-        "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-      link: "https://www.instagram.com/p/CYrKdQxP-kC/",
-    },
-    {
-      url: "/images/site/kimono.png",
-      title: "saitamiya",
-      alt: "夕霧」- Yuugiri",
-      artist: "saitamiya",
-      description: "「夕霧」",
-      link: "https://www.instagram.com/p/Cg_rszivkMI/",
-    },
-    {
-      url: "/images/site/senjua-fuji.png",
-      title: "senjushunga",
-      alt: "36 Views Of Mount Fuji #13",
-      artist: "senjushunga",
-      description:
-        "36 Views Of Mount Fuji #13 「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
-      link: "https://www.instagram.com/p/CnH9NBaNt-j/",
-    },
-    {
-      url: "/images/site/fee.png",
-      title: "No.351 お運びさん",
-      alt: "No.351 お運びさん",
-      artist: "tsubakianna",
-      description:
-        "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-      link: "https://www.instagram.com/p/Ce6FcB3haj-/",
-    },
-  ];
+const slides = [
+  {
+    url: "/images/site/flower-red.png",
+    title: "red flower",
+    alt: "red flower picture artwork",
+    artist: "",
+    description: "",
+  },
+  {
+    url: "/images/site/flower-twocranesgallery.png",
+    title: "浮世絵のアート",
+    alt: "浮世絵のアート",
+    artist: "twocranesgallery",
+    description:
+      "浮世絵は江戸時代から一般人向けで、皆は安く買えてアートを集めることができるようになりました。こうしてtwocranesgalleryは「Standard Edition」で昔と同じようにアートを皆に提供するつもりです。リンクをご覧ください。",
+    link: "https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=",
+  },
+  {
+    url: "/images/site/girlontop.png",
+    title: "milkformycoconut",
+    alt: "NewApproachStudy - study",
+    artist: "milkformycoconut",
+    description: " NewApproachStudy - study",
+    link: "https://www.instagram.com/p/B-hEJa6pO1B/",
+  },
+  {
+    url: "/images/site/japgirl.png",
+    title: "saitamiya",
+    alt: "小説挿絵",
+    artist: "saitamiya",
+    description:
+      "「特選小説」２０２３年３月号『たまのこし』（著・花房観音）小説挿絵",
+    link: "https://www.instagram.com/p/CnonjCQvZhb/",
+  },
+  {
+    url: "/images/site/squirt.png",
+    title: "milkformycoconut",
+    alt: "CherryBlossomStudy - sketch / study,",
+    artist: "milkformycoconut",
+    description: "CherryBlossomStudy - sketch / study",
+    link: "https://www.instagram.com/p/B9t0v1yIFpN/",
+  },
+  {
+    url: "/images/site/tangle.png",
+    title: "No.21 ''Tangled up''",
+    alt: "No.21 ''Tangled up''",
+    artist: "tsubakianna",
+    description:
+      "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
+    link: "https://www.instagram.com/p/CYrKdQxP-kC/",
+  },
+  {
+    url: "/images/site/kimono.png",
+    title: "saitamiya",
+    alt: "夕霧」- Yuugiri",
+    artist: "saitamiya",
+    description: "「夕霧」",
+    link: "https://www.instagram.com/p/Cg_rszivkMI/",
+  },
+  {
+    url: "/images/site/senjua-fuji.png",
+    title: "senjushunga",
+    alt: "36 Views Of Mount Fuji #13",
+    artist: "senjushunga",
+    description:
+      "36 Views Of Mount Fuji #13 「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
+    link: "https://www.instagram.com/p/CnH9NBaNt-j/",
+  },
+  {
+    url: "/images/site/fee.png",
+    title: "No.351 お運びさん",
+    alt: "No.351 お運びさん",
+    artist: "tsubakianna",
+    description:
+      "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
+    link: "https://www.instagram.com/p/Ce6FcB3haj-/",
+  },
+];
 
+export default function HeroSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const lastEl = slides.length - 1;
 
