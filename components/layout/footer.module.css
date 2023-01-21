@@ -62,7 +62,7 @@
     margin: 0 var(--size-2-5);
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 365px) {
   .footer {
     padding: 0 1%;
   }
