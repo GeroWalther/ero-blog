@@ -64,7 +64,7 @@ const slides = [
     link: "https://www.instagram.com/p/Cg_rszivkMI/",
   },
   {
-    url: "/images/site/senjua-fuji.png",
+    url: "/images/site/views-of-fuji.jpeg",
     title: "senjushunga",
     alt: "36 Views Of Mount Fuji #13",
     artist: "senjushunga",

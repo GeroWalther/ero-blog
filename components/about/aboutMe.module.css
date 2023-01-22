@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 1.5rem;
   padding: 16px;
-  background-color: rgb(255, 208, 208);
+  background-color: var(--colorbg);
 }
 
 .disco {
@@ -43,14 +43,20 @@
   grid-area: 4/1/5/3;
 }
 
-.image {
+.image1 {
   position: relative;
 
   width: 100%;
-  min-width: auto;
-  min-height: 16rem;
-  max-height: fit-content;
-  aspect-ratio: 1.2 / 1;
+  /* min-width: auto;
+  min-height: 16rem; */
+  /* max-height: fit-content; */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.image2 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
   object-fit: cover;
 }
 

@@ -21,7 +21,7 @@ const aboutMe = () => {
           </div>
         </div>
         <div className={classes.div2}>
-          <div className={classes.image}>
+          <div className={classes.image1}>
             <Image
               src={"/images/site/flower-twocranesgallery.png"}
               alt={"desert"}
@@ -31,7 +31,7 @@ const aboutMe = () => {
             />
           </div>
           <p>
-            <a href="https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=">
+            <a href="https://www.instagram.com/twocranesgallery/">
               Instagram: @senjushunga
             </a>
           </p>
@@ -40,7 +40,7 @@ const aboutMe = () => {
         <div className={classes.div3}>
           <h3>管理人はどのような人なのか</h3>
           <div className={classes.flexCross}>
-            <div className={classes.image}>
+            <div className={classes.image2}>
               <Image
                 src={"/images/site/japgirl.png"}
                 alt={"desert"}
@@ -76,9 +76,9 @@ const aboutMe = () => {
           </div>
         </div>
         <div className={classes.div6}>
-          <div className={classes.image}>
+          <div className={classes.image2}>
             <Image
-              src={"/images/site/senjua-fuji.png"}
+              src={"/images/site/views-of-fuji.jpeg"}
               alt={"desert"}
               sizes="100%"
               fill
