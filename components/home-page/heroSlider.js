@@ -14,8 +14,8 @@ const slides = [
   },
   {
     url: "/images/site/flower-twocranesgallery.png",
-    title: "浮世絵のアート",
-    alt: "浮世絵のアート",
+    title: "玉門 - 浮世絵のアート",
+    alt: "玉門 - 浮世絵のアート",
     artist: "twocranesgallery",
     description:
       "浮世絵は、江戸時代から大衆に楽しんでもらうために手に入りやすい価格で提供されていました。そのため、twocranesgalleryは「Standard Edition」で昔と同じように手に入りやすい価格でアートを人々に提供します。リンクをご覧ください。",
@@ -23,15 +23,15 @@ const slides = [
   },
   {
     url: "/images/site/girlontop.png",
-    title: "milkformycoconut",
+    title: "NewApproachStudy - study",
     alt: "NewApproachStudy - study",
     artist: "milkformycoconut",
-    description: " NewApproachStudy - study",
+    description: "",
     link: "https://www.instagram.com/p/B-hEJa6pO1B/",
   },
   {
     url: "/images/site/japgirl.png",
-    title: "saitamiya",
+    title: "小説挿絵",
     alt: "小説挿絵",
     artist: "saitamiya",
     description:
@@ -40,10 +40,10 @@ const slides = [
   },
   {
     url: "/images/site/squirt.png",
-    title: "milkformycoconut",
-    alt: "CherryBlossomStudy - sketch / study,",
+    title: "CherryBlossomStudy",
+    alt: "CherryBlossomStudy - sketch / study",
     artist: "milkformycoconut",
-    description: "CherryBlossomStudy - sketch / study",
+    description: "- sketch / study -",
     link: "https://www.instagram.com/p/B9t0v1yIFpN/",
   },
   {
@@ -57,19 +57,19 @@ const slides = [
   },
   {
     url: "/images/site/kimono.png",
-    title: "saitamiya",
-    alt: "夕霧」- Yuugiri",
+    title: "「夕霧」- Yuugiri",
+    alt: "「夕霧」- Yuugiri",
     artist: "saitamiya",
-    description: "「夕霧」",
+    description: "",
     link: "https://www.instagram.com/p/Cg_rszivkMI/",
   },
   {
     url: "/images/site/views-of-fuji.jpeg",
-    title: "senjushunga",
+    title: "36 Views Of Mount Fuji #13",
     alt: "36 Views Of Mount Fuji #13",
     artist: "senjushunga",
     description:
-      "36 Views Of Mount Fuji #13 「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
+      "「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
     link: "https://www.instagram.com/p/CnH9NBaNt-j/",
   },
   {
@@ -131,9 +131,10 @@ export default function HeroSlider() {
             {slides[currentIndex].link && showText && (
               <div className={classes.backText}>
                 <h3 className={classes.h3}>
-                  ご紹介させていただく芸術家 : {slides[currentIndex].title}
+                  ご紹介させていただく芸術家 : {slides[currentIndex].artist}
                 </h3>
                 <div className={classes.pc}>
+                  <p>{slides[currentIndex].title}</p>
                   <p className={classes.p}>
                     {slides[currentIndex].description}
                   </p>
