@@ -114,7 +114,7 @@ export default function HeroSlider() {
           priority
           width={800}
           height={400}
-          onLoad={() => setShowText(true)}
+          onLoadingComplete={() => setShowText(true)}
         />
         <div className={classes.description}>
           <div className={classes.letters}>
