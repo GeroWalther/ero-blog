@@ -18,7 +18,7 @@ const slides = [
     alt: "浮世絵のアート",
     artist: "twocranesgallery",
     description:
-      "浮世絵は江戸時代から一般人向けで、皆は安く買えてアートを集めることができるようになりました。こうしてtwocranesgalleryは「Standard Edition」で昔と同じようにアートを皆に提供するつもりです。リンクをご覧ください。",
+      "浮世絵は、江戸時代から大衆に楽しんでもらうために手に入りやすい価格で提供されていました。そのため、twocranesgalleryは「Standard Edition」で昔と同じように手に入りやすい価格でアートを人々に提供します。リンクをご覧ください。",
     link: "https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=",
   },
   {
@@ -88,7 +88,6 @@ export default function HeroSlider() {
   const lastEl = slides.length - 1;
 
   useEffect(() => {
-    console.log("effect runs");
     let timer = setTimeout(function () {
       currentIndex === lastEl
         ? setCurrentIndex(0)
@@ -98,13 +97,6 @@ export default function HeroSlider() {
       clearTimeout(timer);
     };
   }, [currentIndex]);
-
-  // const bgImageStyle = {
-  //   backgroundImage: `url(${slides[currentIndex].url})`,
-  //   backgroundPosition: "center",
-  //   backgroundSize: "cover",
-  //   height: "100%",
-  // };
 
   const goToNext = (currentIndex) => {
     setCurrentIndex(currentIndex);
@@ -125,7 +117,7 @@ export default function HeroSlider() {
           <div className={classes.letters}>
             <h1>艶っぽい小説が好きなブロガーです。</h1>
             <p>
-              僕なりに面白く書いていた官能小説を皆に楽しく読書させていただけたら、幸いです。
+              僕なりに面白く書いていた官能小説を皆さんに楽しく読んでいただけたら幸いです。
             </p>
           </div>
           <Link className={classes.explore} href="/posts">
@@ -135,7 +127,7 @@ export default function HeroSlider() {
           {slides[currentIndex].link && (
             <div className={classes.backText}>
               <h3 className={classes.h3}>
-                紹介している芸術家 : {slides[currentIndex].title}
+                ご紹介させていただく芸術家 : {slides[currentIndex].title}
               </h3>
               <div className={classes.pc}>
                 <p className={classes.p}>{slides[currentIndex].description}</p>
