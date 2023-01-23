@@ -116,41 +116,45 @@ export default function HeroSlider() {
           height={400}
           onLoadingComplete={() => setShowText(true)}
         />
-        <div className={classes.description}>
-          <div className={classes.letters}>
-            <h1>艶っぽい小説が好きなブロガーです。</h1>
-            <p>
-              僕なりに面白く書いていた官能小説を皆さんに楽しく読んでいただけたら幸いです。
-            </p>
-          </div>
-          <Link className={classes.explore} href="/posts">
-            小説を閲覧する
-          </Link>
-
-          {slides[currentIndex].link && showText && (
-            <div className={classes.backText}>
-              <h3 className={classes.h3}>
-                ご紹介させていただく芸術家 : {slides[currentIndex].title}
-              </h3>
-              <div className={classes.pc}>
-                <p className={classes.p}>{slides[currentIndex].description}</p>
-              </div>
-              <a href={slides[currentIndex].link} className={classes.link}>
-                Instagram:
-                <span> @{slides[currentIndex].artist}</span>
-              </a>
+        {showText && (
+          <div className={classes.description}>
+            <div className={classes.letters}>
+              <h1>艶っぽい小説が好きなブロガーです。</h1>
+              <p>
+                僕なりに面白く書いていた官能小説を皆さんに楽しく読んでいただけたら幸いです。
+              </p>
             </div>
-          )}
+            <Link className={classes.explore} href="/posts">
+              小説を閲覧する
+            </Link>
 
-          <div className={classes.taps}>
-            {slides.map((slide, currentIndex) => (
-              <span
-                key={currentIndex}
-                onClick={() => goToNext(currentIndex)}
-              ></span>
-            ))}
+            {slides[currentIndex].link && showText && (
+              <div className={classes.backText}>
+                <h3 className={classes.h3}>
+                  ご紹介させていただく芸術家 : {slides[currentIndex].title}
+                </h3>
+                <div className={classes.pc}>
+                  <p className={classes.p}>
+                    {slides[currentIndex].description}
+                  </p>
+                </div>
+                <a href={slides[currentIndex].link} className={classes.link}>
+                  Instagram:
+                  <span> @{slides[currentIndex].artist}</span>
+                </a>
+              </div>
+            )}
+
+            <div className={classes.taps}>
+              {slides.map((slide, currentIndex) => (
+                <span
+                  key={currentIndex}
+                  onClick={() => goToNext(currentIndex)}
+                ></span>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
