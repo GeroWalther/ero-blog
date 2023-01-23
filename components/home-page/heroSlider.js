@@ -85,6 +85,7 @@ const slides = [
 
 export default function HeroSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showText, setShowText] = useState(false);
   const lastEl = slides.length - 1;
 
   useEffect(() => {
@@ -95,6 +96,7 @@ export default function HeroSlider() {
     }, 10000);
     return () => {
       clearTimeout(timer);
+      setShowText(false);
     };
   }, [currentIndex]);
 
@@ -109,9 +111,10 @@ export default function HeroSlider() {
           className={classes.image}
           src={slides[currentIndex].url}
           alt={slides[currentIndex].alt}
-          loading="eager"
+          priority
           width={800}
           height={400}
+          onLoad={() => setShowText(true)}
         />
         <div className={classes.description}>
           <div className={classes.letters}>
@@ -124,7 +127,7 @@ export default function HeroSlider() {
             小説を閲覧する
           </Link>
 
-          {slides[currentIndex].link && (
+          {slides[currentIndex].link && showText && (
             <div className={classes.backText}>
               <h3 className={classes.h3}>
                 ご紹介させていただく芸術家 : {slides[currentIndex].title}
