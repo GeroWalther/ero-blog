@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../components/layout/layout";
-import { Fragment } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
   const prevImage = `images/site/flower-red.png`;
@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content={prevImage} key="ogimage" />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   );
 }
