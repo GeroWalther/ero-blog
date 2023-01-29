@@ -22,7 +22,7 @@
 }
 
 .footer a {
-  color: var(--color-grey-100);
+  color: var(--color-grey-50);
   font-size: var(--size-3);
 }
 .footer h3 {
@@ -39,13 +39,9 @@
   .footer ul {
     gap: 0.5rem;
   }
-
-  /* .footer a {
-    font-size: var(--size-3);
-  } */
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .footer {
     height: 3em;
     padding: 0 3%;
@@ -61,9 +57,12 @@
   .footer li {
     margin: 0 var(--size-2-5);
   }
+
+  .footer h3 {
+    font-size: var(--size-3);
+  }
 }
 @media (max-width: 365px) {
   .footer {
-    padding: 0 1%;
   }
 }

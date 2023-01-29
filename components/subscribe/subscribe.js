@@ -107,7 +107,7 @@ function Subscribe() {
           <div className={classes.form}>
             <h3 className={classes.h3}>ニュースレター</h3>
             <p className={classes.p}>
-              新しくて艶っぽい小説を読みそびれないように登録して、投稿し次第または艶っぽい内容を更新したら、メールでお知らせいたします。
+              新しい艶っぽさを読みそびれないように登録して投稿し次第、またはブログの内容を更新したら、メールでお知らせいたします。
             </p>
             <div className={classes.group}>
               <input

@@ -67,4 +67,7 @@
   .header a {
     font-size: var(--size-2-5);
   }
+  .header {
+    height: 3rem;
+  }
 }
