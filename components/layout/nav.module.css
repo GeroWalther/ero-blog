@@ -43,7 +43,6 @@
 }
 
 @media (max-width: 535px) {
-  /* if 3 links are displayed  */
   .header {
     padding: 0 3%;
   }
@@ -66,8 +65,5 @@
 
   .header a {
     font-size: var(--size-2-5);
-  }
-  .header {
-    height: 3rem;
   }
 }

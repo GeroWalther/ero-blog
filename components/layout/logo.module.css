@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 420px) {
   .logo {
     font-size: var(--size-3);
   }
