@@ -59,7 +59,7 @@
     font-size: var(--size-3);
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .header li {
     margin: 0 var(--size-2);
   }
