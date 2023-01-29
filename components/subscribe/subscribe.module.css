@@ -1,0 +1,159 @@
+.bg {
+  padding: 5rem 3.5rem;
+  /* background-image: linear-gradient(
+    to bottom,
+    var(--colorhotonk50),
+    var(--colorhotpink100)
+  ); */
+  background-color: var(--color-grey-110);
+}
+.h3 {
+  text-align: center;
+  font-size: var(--size-6);
+  color: var(--color-grey-860);
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: var(--color-grey-700);
+}
+
+.p {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-grey-700);
+}
+
+.bgpic {
+  background-image: linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.9) 40%,
+      transparent 50%
+    ),
+    url(../../public/images/site/japgirl.png);
+
+  background-size: auto 100%;
+  object-fit: cover;
+  border-radius: 2px;
+
+  box-shadow: 0 1.5rem 5rem var(--color-darkredblur);
+}
+
+.form {
+  width: 50%;
+  padding: 2.5rem 2rem;
+}
+.group:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.input {
+  font-size: var(--size-3);
+  font-family: inherit;
+  color: inherit;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.831);
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.145);
+  border-bottom: 3px solid var(--color-success-500);
+}
+.input:focus:invalid {
+  border-bottom: 3px solid orangered;
+}
+
+.label {
+  margin: 10px;
+  font-size: var(--size-2-5);
+  font-weight: 700;
+  margin-left: 1rem;
+  display: block;
+
+  transition: all 0.3s;
+}
+.btn {
+  height: 3rem;
+  width: 22rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.154);
+}
+.btn:hover,
+.btn:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.301);
+}
+.message {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: var(--size-3);
+  color: var(--color-grey-700);
+}
+
+.input:placeholder-shown + .label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2.3rem);
+}
+@media (max-width: 1000px) {
+  .bgpic {
+    background-position: right 0 center;
+  }
+}
+
+@media (max-width: 760px) {
+  .form {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .message {
+    margin-bottom: 1rem;
+  }
+  .bgpic {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.7) 100%
+      ),
+      url(../../public/images/site/japgirl3.png);
+    background-size: 100% auto;
+  }
+  .bg {
+    padding: 2.5rem 1rem;
+  }
+  .btn {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .bgpic {
+    background-size: auto 120%;
+  }
+}
+@media (min-width: 1310px) {
+  .bgpic {
+    background-size: auto 140%;
+  }
+}
+@media (min-width: 1510px) {
+  .bgpic {
+    background-size: auto 160%;
+  }
+}
+@media (min-width: 1710px) {
+  .bgpic {
+    background-size: auto 205%;
+  }
+}
+@media (max-width: 490px) {
+  .bgpic {
+    background-size: auto 100%;
+  }
+}

@@ -15,7 +15,7 @@ export default function Support() {
         <Link href="/contact">
           問い合わせ
         </Link>に送っていただけると幸いです。 <br />
-        ご連絡をお待ちします。
+        ご連絡をお待ちしています。
       </p>
       <p>
         艶っぽい小説が好きで、作者の僕にコーヒーを奢ってみたいと思ったら、

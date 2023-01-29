@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import classes from "./contact-form.module.css";
 import Notification from "../ui/notification";
+import Button from "../ui/Button";
 
 async function sendContactData(contactDetails) {
   const response = await fetch("/api/contact", {
@@ -112,11 +113,11 @@ function ContactForm() {
             />
           </div>
         </div>
-        <div className={classes.control}>
+        <div className={`${classes.control} ${classes.textfield}`}>
           <label htmlFor="message">メッセージ</label>
           <textarea
             id="message"
-            rows="5"
+            rows="10"
             required
             value={enteredMessage}
             onChange={(event) => setEnteredMessage(event.target.value)}
@@ -124,7 +125,11 @@ function ContactForm() {
         </div>
 
         <div className={classes.actions}>
-          <button>送信</button>
+          <p className={classes.p}>
+            又は芸術家のコラボの依頼などならブログの管理人のメールでご連絡をお待ちしております。
+            <b>ero_blog.yahoo.com</b>です。
+          </p>
+          <Button type="submit">送信</Button>
         </div>
       </form>
       {notification && (

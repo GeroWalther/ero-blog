@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 535px) {
   /* if 3 links are displayed  */
   .header {
     padding: 0 3%;
@@ -59,8 +59,12 @@
     font-size: var(--size-3);
   }
 }
-@media (max-width: 365px) {
-  .header {
-    padding: 0 1%;
+@media (max-width: 380px) {
+  .header li {
+    margin: 0 var(--size-2);
+  }
+
+  .header a {
+    font-size: var(--size-2-5);
   }
 }

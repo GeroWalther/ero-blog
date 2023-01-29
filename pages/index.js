@@ -5,6 +5,7 @@ import HeroSlider from "../components/home-page/heroSlider";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import { getFeaturedPosts } from "../lib/posts-util";
 import SupportSection from "../components/home-page/supportSection";
+import Subscribe from "../components/subscribe/subscribe";
 
 function HomePage(props) {
   return (
@@ -18,7 +19,7 @@ function HomePage(props) {
       </Head>
       <HeroSlider />
       <FeaturedPosts posts={props.posts} />
-
+      <Subscribe />
       <SupportSection />
     </Fragment>
   );

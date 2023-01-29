@@ -3,6 +3,7 @@ import Head from "next/head";
 import ContactForm from "../components/contact/contact-form";
 import FeaturedPosts from "../components/home-page/featured-posts";
 import { getFeaturedPosts } from "../lib/posts-util";
+import Subscribe from "../components/subscribe/subscribe";
 
 function Contact(props) {
   return (
@@ -15,6 +16,7 @@ function Contact(props) {
         />
       </Head>
       <ContactForm />
+      <Subscribe />
       <FeaturedPosts posts={props.posts} />
     </Fragment>
   );

@@ -21,13 +21,23 @@ const slides = [
       "浮世絵は、江戸時代から大衆に楽しんでもらうために手に入りやすい価格で提供されていました。そのため、twocranesgalleryは「Standard Edition」で昔と同じように手に入りやすい価格でアートを人々に提供します。リンクをご覧ください。",
     link: "https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=",
   },
+
   {
-    url: "/images/site/girlontop.png",
-    title: "NewApproachStudy - study",
-    alt: "NewApproachStudy - study",
+    url: "/images/site/big.png",
+    title: "Sketch",
+    alt: "Sketch",
     artist: "milkformycoconut",
     description: "",
-    link: "https://www.instagram.com/p/B-hEJa6pO1B/",
+    link: "https://www.instagram.com/p/CGYRTQppjYw/",
+  },
+  {
+    url: "/images/site/views-of-fuji.jpeg",
+    title: "36 Views Of Mount Fuji #13",
+    alt: "36 Views Of Mount Fuji #13",
+    artist: "senjushunga",
+    description:
+      "「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
+    link: "https://www.instagram.com/p/CnH9NBaNt-j/",
   },
   {
     url: "/images/site/japgirl.png",
@@ -46,15 +56,7 @@ const slides = [
     description: "- sketch / study -",
     link: "https://www.instagram.com/p/B9t0v1yIFpN/",
   },
-  {
-    url: "/images/site/tangle.png",
-    title: "No.21 ''Tangled up''",
-    alt: "No.21 ''Tangled up''",
-    artist: "tsubakianna",
-    description:
-      "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-    link: "https://www.instagram.com/p/CYrKdQxP-kC/",
-  },
+
   {
     url: "/images/site/kimono.png",
     title: "「夕霧」- Yuugiri",
@@ -64,22 +66,21 @@ const slides = [
     link: "https://www.instagram.com/p/Cg_rszivkMI/",
   },
   {
-    url: "/images/site/views-of-fuji.jpeg",
-    title: "36 Views Of Mount Fuji #13",
-    alt: "36 Views Of Mount Fuji #13",
-    artist: "senjushunga",
-    description:
-      "「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
-    link: "https://www.instagram.com/p/CnH9NBaNt-j/",
+    url: "/images/site/girlontop.png",
+    title: "NewApproachStudy - study",
+    alt: "NewApproachStudy - study",
+    artist: "milkformycoconut",
+    description: "",
+    link: "https://www.instagram.com/p/B-hEJa6pO1B/",
   },
   {
-    url: "/images/site/fee.png",
-    title: "No.351 お運びさん",
-    alt: "No.351 お運びさん",
+    url: "/images/site/tangle.png",
+    title: "No.21 ''Tangled up''",
+    alt: "No.21 ''Tangled up''",
     artist: "tsubakianna",
     description:
       "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-    link: "https://www.instagram.com/p/Ce6FcB3haj-/",
+    link: "https://www.instagram.com/p/CYrKdQxP-kC/",
   },
 ];
 
