@@ -62,7 +62,3 @@
     font-size: var(--size-3);
   }
 }
-@media (max-width: 365px) {
-  .footer {
-  }
-}
