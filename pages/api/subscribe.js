@@ -6,6 +6,7 @@ mailchimp.setConfig({
 });
 
 export default async (req, res) => {
+  const listId = process.env.MAILCHIMP_AUDIENCE_ID;
   const { email, fName, lName, emailIsValid } = req.body;
 
   if (!email || !emailIsValid) {
@@ -15,7 +16,7 @@ export default async (req, res) => {
   }
 
   try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
+    await mailchimp.lists.addListMember(listId, {
       email_address: email,
       status: "subscribed",
       merge_fields: {
