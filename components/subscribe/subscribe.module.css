@@ -110,7 +110,12 @@
     width: 100%;
     padding: 1.4rem;
   }
-
+  .p {
+    font-size: var(--size-2-5);
+  }
+  .message {
+    font-size: var(--size-2);
+  }
   .message {
     margin-bottom: 1rem;
   }
@@ -133,24 +138,29 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1050px) {
   .bgpic {
     background-size: auto 120%;
   }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1240px) {
   .bgpic {
     background-size: auto 140%;
   }
 }
-@media (min-width: 1510px) {
+@media (min-width: 1440px) {
   .bgpic {
     background-size: auto 160%;
   }
 }
-@media (min-width: 1710px) {
+@media (min-width: 1640px) {
   .bgpic {
-    background-size: auto 205%;
+    background-size: auto 170%;
+  }
+}
+@media (min-width: 1740px) {
+  .bgpic {
+    background-size: auto 190%;
   }
 }
 @media (max-width: 490px) {

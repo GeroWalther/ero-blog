@@ -173,7 +173,7 @@ function Subscribe() {
             <div className={classes.message}>
               {message
                 ? message
-                : `ブログを更新する時だけにメールを送りします。スパムではないです。`}
+                : `ブログを更新する時だけにメールを送りします。スパムではないです。以下の登録ボタンを押すとこのブログのプライバシーポリシーや免責事項、利用規約に賛成しています。`}
             </div>
             <Button type="submit" style={classes.btn}>
               {"登録"}
