@@ -5,13 +5,13 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const slides = [
-  {
-    url: "/images/site/flower-red.png",
-    title: "red flower",
-    alt: "red flower picture artwork",
-    artist: "",
-    description: "",
-  },
+  // {
+  //   url: "/images/site/flower-red.png",
+  //   title: "red flower",
+  //   alt: "red flower picture artwork",
+  //   artist: "",
+  //   description: "",
+  // },
   {
     url: "/images/site/flower-twocranesgallery.png",
     title: "玉門 - 浮世絵のアート",
