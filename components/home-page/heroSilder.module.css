@@ -31,7 +31,7 @@
   width: 100%;
   z-index: 0;
   filter: brightness(0.7);
-  aspect-ratio: 1 / 1.25;
+  /* aspect-ratio: 1 / 1; */
   object-fit: cover;
   min-height: 94vh;
 }
@@ -135,8 +135,11 @@
   .section h1 {
     font-size: var(--size-5);
   }
-  .section p {
+  .p {
     font-size: var(--size-3);
+  }
+  .link {
+    margin-top: 0px;
   }
   .taps span {
     margin: 10px;
