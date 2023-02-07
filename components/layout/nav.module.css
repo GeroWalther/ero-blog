@@ -37,9 +37,8 @@
     gap: 0.5rem;
   }
 
-  .header a {
-    /* font-size: var(--size-3); */
-  }
+  /* .header a {
+    font-size: var(--size-3);  }*/
 }
 
 @media (max-width: 535px) {
