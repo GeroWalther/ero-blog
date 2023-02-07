@@ -163,7 +163,7 @@
     background-size: auto 190%;
   }
 }
-@media (max-width: 490px) {
+@media (max-width: 420px) {
   .bgpic {
     background-size: auto 100%;
   }
