@@ -58,9 +58,9 @@
   }
 }
 @media (max-width: 420px) {
-  .header li {
-    margin: 0 var(--size-2);
-  }
+  /* .header li {
+    margin: 0 var(--size-2-5);
+  } */
 
   .header a {
     font-size: var(--size-2-5);
