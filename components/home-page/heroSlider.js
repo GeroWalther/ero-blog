@@ -1,8 +1,8 @@
-import classes from "./heroSilder.module.css";
-import Link from "next/link";
+import classes from './heroSilder.module.css';
+import Link from 'next/link';
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const slides = [
   // {
@@ -13,92 +13,92 @@ const slides = [
   //   description: "",
   // },
   {
-    url: "/images/site/flower-twocranesgallery.png",
-    title: "玉門 - 浮世絵のアート",
-    alt: "玉門 - 浮世絵のアート",
-    artist: "twocranesgallery",
+    url: '/images/site/flower-twocranesgallery.png',
+    title: '玉門 - 浮世絵のアート',
+    alt: '玉門 - 浮世絵のアート',
+    artist: 'twocranesgallery',
     description:
-      "浮世絵は、江戸時代から大衆に楽しんでもらうために手に入りやすい価格で提供されていました。そのため、twocranesgalleryは「Standard Edition」で昔と同じように手に入りやすい価格でアートを人々に提供します。リンクをご覧ください。",
-    link: "https://www.instagram.com/p/Cja9Fs0LTIp/?igshid=MDJmNzVkMjY=",
+      '浮世絵は、江戸時代から大衆に楽しんでもらうために手に入りやすい価格で提供されていました。そのため、twocranesgalleryは「Standard Edition」で昔と同じように手に入りやすい価格でアートを人々に提供します。リンクをご覧ください。',
+    link: 'https://www.instagram.com/twocranesgallery/?igsh=MzRlODBiNWFlZA%3D%3D',
   },
   {
-    url: "/images/site/duft.webp",
-    title: "聞き香",
-    alt: "聞き香",
-    artist: "Senjushunga",
+    url: '/images/site/duft.webp',
+    title: '聞き香',
+    alt: '聞き香',
+    artist: 'Senjushunga',
     description:
       "'The scent (of Buddhist temples) is gentle yet complex, and I always burn incense when painting. It has become a part of my creative ritual.' ",
-    link: "https://www.instagram.com/p/CgCqHc8NcZ8/",
+    link: 'https://www.instagram.com/senjushunga/?igsh=MzRlODBiNWFlZA%3D%3D',
   },
 
   {
-    url: "/images/site/big.png",
-    title: "Sketch",
-    alt: "Sketch",
-    artist: "milkformycoconut",
-    description: "",
-    link: "https://www.instagram.com/p/CGYRTQppjYw/",
+    url: '/images/site/big.png',
+    title: 'Sketch',
+    alt: 'Sketch',
+    artist: 'milkformycoconut',
+    description: '',
+    link: 'https://www.instagram.com/p/CGYRTQppjYw/',
   },
   {
-    url: "/images/site/japgirl.png",
-    title: "小説挿絵",
-    alt: "小説挿絵",
-    artist: "saitamiya",
+    url: '/images/site/japgirl.png',
+    title: '小説挿絵',
+    alt: '小説挿絵',
+    artist: 'saitamiya',
     description:
-      "「特選小説」２０２３年３月号『たまのこし』（著・花房観音）小説挿絵",
-    link: "https://www.instagram.com/p/CnonjCQvZhb/",
+      '「特選小説」２０２３年３月号『たまのこし』（著・花房観音）小説挿絵',
+    link: 'https://www.instagram.com/p/CnonjCQvZhb/',
   },
   {
-    url: "/images/site/squirt.png",
-    title: "CherryBlossomStudy",
-    alt: "CherryBlossomStudy - sketch / study",
-    artist: "milkformycoconut",
-    description: "- sketch / study -",
-    link: "https://www.instagram.com/p/B9t0v1yIFpN/",
+    url: '/images/site/squirt.png',
+    title: 'CherryBlossomStudy',
+    alt: 'CherryBlossomStudy - sketch / study',
+    artist: 'milkformycoconut',
+    description: '- sketch / study -',
+    link: 'https://www.instagram.com/p/B9t0v1yIFpN/',
   },
   {
-    url: "/images/site/views-of-fuji.jpeg",
-    title: "36 Views Of Mount Fuji #13",
-    alt: "36 Views Of Mount Fuji #13",
-    artist: "senjushunga",
+    url: '/images/site/views-of-fuji.jpeg',
+    title: '36 Views Of Mount Fuji #13',
+    alt: '36 Views Of Mount Fuji #13',
+    artist: 'senjushunga',
     description:
-      "「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.",
-    link: "https://www.instagram.com/p/CnH9NBaNt-j/",
+      '「夕焼け」 This is an homage to one of my absolutly favorite Meiji period (1869-1912) woodblock prints.',
+    link: 'https://www.instagram.com/senjushunga/?igsh=MzRlODBiNWFlZA%3D%3D',
   },
   {
-    url: "/images/site/tangle.png",
+    url: '/images/site/tangle.png',
     title: "No.21 ''Tangled up''",
     alt: "No.21 ''Tangled up''",
-    artist: "tsubakianna",
+    artist: 'tsubakianna',
     description:
-      "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-    link: "https://www.instagram.com/p/CYrKdQxP-kC/",
+      '完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。',
+    link: 'https://www.instagram.com/p/CYrKdQxP-kC/',
   },
   {
-    url: "/images/site/kimono.png",
-    title: "「夕霧」- Yuugiri",
-    alt: "「夕霧」- Yuugiri",
-    artist: "saitamiya",
-    description: "",
-    link: "https://www.instagram.com/p/Cg_rszivkMI/",
+    url: '/images/site/kimono.png',
+    title: '「夕霧」- Yuugiri',
+    alt: '「夕霧」- Yuugiri',
+    artist: 'saitamiya',
+    description: '',
+    link: 'https://www.instagram.com/p/Cg_rszivkMI/',
   },
   {
-    url: "/images/site/girlontop.png",
-    title: "NewApproachStudy - study",
-    alt: "NewApproachStudy - study",
-    artist: "milkformycoconut",
-    description: "",
-    link: "https://www.instagram.com/p/B-hEJa6pO1B/",
+    url: '/images/site/girlontop.png',
+    title: 'NewApproachStudy - study',
+    alt: 'NewApproachStudy - study',
+    artist: 'milkformycoconut',
+    description: '',
+    link: 'https://www.instagram.com/p/B-hEJa6pO1B/',
   },
 
   {
-    url: "/images/site/fee.png",
+    url: '/images/site/fee.png',
     title: "No.351 'お運びさん'",
     alt: "No.351 'お運びさん'",
-    artist: "tsubakianna",
+    artist: 'tsubakianna',
     description:
-      "完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。",
-    link: "https://www.instagram.com/p/Ce6FcB3haj-/",
+      '完成品はMERRY ART GALLERY、存分に猥雑さを堪能できるレディメイドメタル展にて展示しております。',
+    link: 'https://www.instagram.com/p/Ce6FcB3haj-/',
   },
 ];
 
@@ -143,7 +143,7 @@ export default function HeroSlider() {
                 僕なりに面白く書いていた官能小説を皆さんに楽しく読んでいただけたら幸いです。
               </p>
             </div>
-            <Link className={classes.explore} href="/posts">
+            <Link className={classes.explore} href='/posts'>
               小説を閲覧する
             </Link>
 
@@ -169,8 +169,7 @@ export default function HeroSlider() {
               {slides.map((slide, currentIndex) => (
                 <span
                   key={currentIndex}
-                  onClick={() => goToNext(currentIndex)}
-                ></span>
+                  onClick={() => goToNext(currentIndex)}></span>
               ))}
             </div>
           </div>
