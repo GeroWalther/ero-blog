@@ -1,8 +1,8 @@
-import Image from "next/image";
-import React from "react";
-import Card from "../ui/Card";
-import Support from "../ui/support";
-import classes from "./aboutMe.module.css";
+import Image from 'next/image';
+import React from 'react';
+import Card from '../ui/Card';
+import Support from '../ui/support';
+import classes from './aboutMe.module.css';
 
 const aboutMe = () => {
   return (
@@ -20,22 +20,22 @@ const aboutMe = () => {
               このブログで読者に僕なりに面白くて、ドキドキさせる官能小説のような作品を読んでいただきながら、最近ネットで、盛り上がっている個人的に素敵だと思った芸術品を紹介することで男女を問わず皆さんに楽しい時間を過ごしていただけたら、幸いです。
             </p>
             <p>
-              そして管理人は2022年にプログラミングを勉強し始めたばかりなので、このブログを通して日本語の勉強はもちろん、プログラミングも同時に練習しています。
+              そして管理人はこのブログを作成した際、プログラミングを勉強し始めたばかりなので、このブログを通して日本語の勉強はもちろん、プログラミングも同時に練習しています。
             </p>
           </div>
         </div>
         <div className={classes.div2}>
           <div className={classes.image1}>
             <Image
-              src={"/images/site/flower-twocranesgallery.png"}
-              alt={"desert"}
+              src={'/images/site/flower-twocranesgallery.png'}
+              alt={'desert'}
               priority
-              sizes="100%"
-              layout="fill"
+              sizes='100%'
+              layout='fill'
             />
           </div>
           <p>
-            <a href="https://www.instagram.com/twocranesgallery/">
+            <a href='https://www.instagram.com/twocranesgallery/'>
               Instagram: @senjushunga
             </a>
           </p>
@@ -46,14 +46,14 @@ const aboutMe = () => {
           <div className={classes.flexCross}>
             <div className={classes.image2}>
               <Image
-                src={"/images/site/japgirl.png"}
-                alt={"desert"}
-                sizes="100%"
+                src={'/images/site/japgirl.png'}
+                alt={'desert'}
+                sizes='100%'
                 fill
               />
             </div>
             <p>
-              <a href="https://www.instagram.com/saitamiya/">
+              <a href='https://www.instagram.com/saitamiya/'>
                 Instagram: @saitamiya
               </a>
             </p>
@@ -92,14 +92,14 @@ const aboutMe = () => {
         <div className={classes.div6}>
           <div className={classes.image2}>
             <Image
-              src={"/images/site/views-of-fuji.jpeg"}
-              alt={"desert"}
-              sizes="100%"
+              src={'/images/site/views-of-fuji.jpeg'}
+              alt={'desert'}
+              sizes='100%'
               fill
             />
           </div>
           <p>
-            <a href="https://www.instagram.com/twocranesgallery/">
+            <a href='https://www.instagram.com/twocranesgallery/'>
               Instagram: @twocranesgallery
             </a>
           </p>
