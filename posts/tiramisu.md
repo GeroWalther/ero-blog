@@ -2,8 +2,8 @@
 title: ティラミスを作ってみた
 excerpt: 気分転換として、そして、俺の天使との時間を楽しく過ごせるように土曜日の朝に最高なストレス発散をした。ティラミスを作ってみた。
 image: yellow-flower.png
-isFeatured: true
-date: "2022-08-20"
+isFeatured: false
+date: '2022-08-20'
 ---
 
 最近仕事で忙しくてよく頑張ってるので、  
