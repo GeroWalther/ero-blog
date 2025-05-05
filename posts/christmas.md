@@ -3,7 +3,7 @@ title: 'クリスマスの贈り物'
 date: '2024-12-23'
 image: christmas.WEBP
 excerpt: 窓の外では静かに雪が降り積もり、街灯の光がぼんやりと揺らめいていた。クリスマスの夜、家の中は対照的に暖かく、柔らかな明かりと薪のはぜる音が心地よい静寂を包んでいる。
-isFeatured: true
+isFeatured: false
 ---
 
 雪の下でのクリスマスの贈り物
