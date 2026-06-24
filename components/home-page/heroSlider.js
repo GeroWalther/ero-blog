@@ -22,6 +22,15 @@ const slides = [
     link: 'https://www.instagram.com/twocranesgallery/?igsh=MzRlODBiNWFlZA%3D%3D',
   },
   {
+    url: '/images/site/erogatusso1.png',
+    title: 'dibujos de erogatusso',
+    alt: 'dibujos de erogatusso',
+    artist: 'erogatusso',
+    description:
+      "@maritza1830_art y yo @emilg.art hicimos estos dibujos de la misma referencia fotográfica, estos son nuestros estilos, ella es una artista muy importante y talentosa, a ella le pertenece el trabajo con lápiz y carboncillo. ",
+    link: 'https://www.instagram.com/p/CwDaR9QuiEk/?img_index=2',
+  },
+  {
     url: '/images/site/duft.webp',
     title: '聞き香',
     alt: '聞き香',
@@ -47,6 +56,15 @@ const slides = [
     description:
       '「特選小説」２０２３年３月号『たまのこし』（著・花房観音）小説挿絵',
     link: 'https://www.instagram.com/p/CnonjCQvZhb/',
+  },
+  {
+    url: '/images/site/erogatusso2.png',
+    title: 'erogatusso art',
+    alt: 'erogatusso art',
+    artist: 'erogatusso',
+    description:
+      "This is a very special drawing for me, one of the most beautiful that I did, of an important person for me  ",
+    link: 'https://www.instagram.com/p/Cgw3WM_Og0D/',
   },
   {
     url: '/images/site/squirt.png',
