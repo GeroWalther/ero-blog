@@ -1,7 +1,7 @@
 ---
 title: テニスの禁断レッスン
 excerpt: 夏の午後、テニスコートの熱気は空気を重くしていた。コートの中央で、彩乃（あやの）はラケットを握り、汗で光る白い肌をさらけ出していた。
-image: tennis.png
+image: tennisukiyoe.png
 isFeatured: true
 date: '2025-05-05'
 ---

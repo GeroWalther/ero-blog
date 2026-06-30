@@ -12,6 +12,15 @@ const slides = [
   //   artist: "",
   //   description: "",
   // },
+    {
+    url: '/images/site/ajisai.png',
+    title: '紫陽花の香り - Ajisai no kaori',
+    alt: '紫陽花の香り - Ajisai no kaori',
+    artist: 'エロブログ',
+    description:
+      "魅惑的な香りで、心を落ち着かせる紫陽花の香りが漂い、野外で雨に濡れた花びらが、しっとりとした雰囲気を醸し出す。",
+    link: '',
+  },
   {
     url: '/images/site/flower-twocranesgallery.png',
     title: '玉門 - 浮世絵のアート',
@@ -22,13 +31,13 @@ const slides = [
     link: 'https://www.instagram.com/twocranesgallery/?igsh=MzRlODBiNWFlZA%3D%3D',
   },
   {
-    url: '/images/site/erogatusso1.png',
+    url: '/images/site/erogatusso1color.png',
     title: 'dibujos de erogatusso',
     alt: 'dibujos de erogatusso',
     artist: 'erogatusso',
     description:
-      "@maritza1830_art y yo @emilg.art hicimos estos dibujos de la misma referencia fotográfica, estos son nuestros estilos, ella es una artista muy importante y talentosa, a ella le pertenece el trabajo con lápiz y carboncillo. ",
-    link: 'https://www.instagram.com/p/CwDaR9QuiEk/?img_index=2',
+      "buenísima elección de mi amiga Maritza para dibujar esta bella referencia, bolígrafos con marcadores",
+    link: 'https://www.instagram.com/p/CwOjpYkOG42/?igsh=YWZ5Y3Nzc3lsa2Fj',
   },
   {
     url: '/images/site/duft.webp',
@@ -165,7 +174,7 @@ export default function HeroSlider() {
               小説を閲覧する
             </Link>
 
-            {slides[currentIndex].link && showText && (
+            {showText && (
               <div className={classes.backText}>
                 <h3 className={classes.h3}>
                   ご紹介させていただく芸術家 : {slides[currentIndex].artist}
@@ -176,10 +185,12 @@ export default function HeroSlider() {
                     {slides[currentIndex].description}
                   </p>
                 </div>
-                <a href={slides[currentIndex].link} className={classes.link}>
-                  Instagram:
-                  <span> @{slides[currentIndex].artist}</span>
-                </a>
+                {slides[currentIndex].link ? (
+                  <a href={slides[currentIndex].link} className={classes.link}>
+                    Instagram:
+                    <span> @{slides[currentIndex].artist}</span>
+                  </a>
+                ) : null}
               </div>
             )}
 
