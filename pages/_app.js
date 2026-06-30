@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout";
 import { Analytics } from "@vercel/analytics/react";
 
 function MyApp({ Component, pageProps }) {
-  const prevImage = `images/site/flower-red.png`;
+  const prevImage = `https://ero-blog.vercel.app/images/site/ajisai-og.png`;
 
   //${window.location.origin}/
 
